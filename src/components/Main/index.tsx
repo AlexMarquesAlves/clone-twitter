@@ -1,18 +1,39 @@
-import { ReactNode } from 'react';
+import {
+   Container,
+   Header,
+   BackIcon,
+   ProfileInfo,
+   BottomMenu,
+   HomeIcon,
+   SearchIcon,
+   BellIcon,
+   EmailIcon,
+} from './styles';
 
-import { Container } from './styles';
+function Main() {
+   return (
+      <Container>
+         <Header>
+            <button>
+               <BackIcon />
+            </button>
 
-interface MainProps {
-  children: ReactNode;
+            <ProfileInfo>
+               <strong>Alex Marques Alves</strong>
+               <span>612 Tweets</span>
+            </ProfileInfo>
+         </Header>
+
+         {/* <ProfilePage/> */}
+
+         <BottomMenu>
+            <HomeIcon />
+            <SearchIcon />
+            <BellIcon />
+            <EmailIcon />
+         </BottomMenu>
+      </Container>
+   );
 }
-
-function Main({ children }: MainProps) {
-  return (
-    <Container>
-      <h1>Main</h1>
-      {children}
-    </Container>
-  );
-};
 
 export default Main;
