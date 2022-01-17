@@ -31,7 +31,12 @@ export const RocketseatIcon = styled(Rocketseat)`
    }
 `;
 
-export const Body = styled.div``;
+export const Body = styled.div`
+   display: flex;
+   margin-top: 3px;
+
+   position: relative;
+`;
 
 export const Avatar = styled.div``;
 
