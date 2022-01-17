@@ -90,12 +90,24 @@ export const Dot = styled.div`
    margin: 0 10px;
 `;
 
-export const Description = styled.div`
+export const Description = styled.p`
    font-size: 14px;
    margin-top: 4px;
 `;
 
-export const ImageContent = styled.div``;
+export const ImageContent = styled.div`
+   margin-top: 12px;
+   width: 100%;
+   height: min(285px, max(175px, 41vw));
+
+   background: var(--outline);
+   border-radius: 14px;
+
+   cursor: pointer;
+   &:hover {
+      opacity: 0.7;
+   }
+`;
 
 export const Icons = styled.div``;
 
