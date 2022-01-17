@@ -31,3 +31,7 @@ export const Info = styled.div`
       color: var(--gray);
    }
 `;
+
+export const FollowButton = styled(Button)`
+   padding: 6px 17px;
+`;
