@@ -144,6 +144,20 @@ export const Avatar = styled.div`
    background: var(--gray);
 `;
 
-export const ProfileData = styled.div``;
+export const ProfileData = styled.div`
+   display: none;
+
+   @media (min-width: 1280px) {
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 10px;
+      font-size: 14px;
+
+      > span {
+         color: var(--gray);
+      }
+   }
+`;
 
 export const ExitIcon = styled.div``;
