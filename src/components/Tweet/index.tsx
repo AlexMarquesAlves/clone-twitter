@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import {
    Container,
    Retweeted,
@@ -18,11 +16,7 @@ import {
    LikeIcon,
 } from './styles';
 
-interface TweetProps {
-   children?: ReactNode;
-}
-
-function Tweet({ children }: TweetProps) {
+function Tweet() {
    return (
       <Container>
          <Retweeted>

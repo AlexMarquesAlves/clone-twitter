@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import StickyBox from 'react-sticky-box';
 
 import List from '../List';
@@ -12,11 +11,8 @@ import {
    SearchIcon,
    Body,
 } from './styles';
-interface SideBarProps {
-   children?: ReactNode;
-}
 
-function SideBar({ children }: SideBarProps) {
+function SideBar() {
    return (
       <Container>
          <SearchWrapper>

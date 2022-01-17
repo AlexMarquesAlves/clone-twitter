@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import Feed from '../Feed';
 
 import {
@@ -13,11 +11,7 @@ import {
    EditButton,
 } from './styles';
 
-interface ProfilePageProps {
-   children?: ReactNode;
-}
-
-function ProfilePage({ children }: ProfilePageProps) {
+function ProfilePage() {
    return (
       <Container>
          <Banner>

@@ -1,5 +1,3 @@
-import { ReactNode } from 'react';
-
 import Button from '../Button';
 
 import {
@@ -18,11 +16,7 @@ import {
    ExitIcon,
 } from './styles';
 
-interface MenuBarProps {
-   children?: ReactNode;
-}
-
-function MenuBar({ children }: MenuBarProps) {
+function MenuBar() {
    return (
       <Container>
          <Topside>
