@@ -29,7 +29,9 @@ function ProfilePage({ children }: ProfilePageProps) {
 
             <p>
                Developer at{' '}
-               <a href="https://iduque.online/">Alex Marques Alves</a>
+               <a href="https://github.com/AlexMarquesAlves">
+                  Alex Marques Alves
+               </a>
             </p>
 
             <ul>
