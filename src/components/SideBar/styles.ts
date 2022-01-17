@@ -21,7 +21,31 @@ export const SearchWrapper = styled.div`
    max-height: 57px;
 `;
 
-export const SearchInput = styled.div``;
+export const SearchInput = styled.div`
+   width: 100%;
+   height: 39px;
+   font-size: 14px;
+   padding: 0 10px 0 52px;
+   border-radius: 19.5px;
+   background: var(--search);
+   &::placeholder {
+      color: var(--gray);
+   }
+   ~ svg {
+      position: relative;
+      top: -33px;
+      left: 15px;
+      z-index: 1;
+      transition: 180ms ease-in-out;
+   }
+   outline: 0;
+   &:focus {
+      border: 1px solid var(--twitter);
+      ~ svg {
+         fill: var(--twitter);
+      }
+   }
+`;
 
 export const SearchIcon = styled.div``;
 
