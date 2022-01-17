@@ -20,4 +20,7 @@ export const Item = styled.div`
    }
 `;
 
-export const Title = styled.div``;
+export const Title = styled.div`
+   font-weight: bold;
+   font-size: 19px;
+`;
