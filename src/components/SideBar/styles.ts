@@ -47,6 +47,10 @@ export const SearchInput = styled.div`
    }
 `;
 
-export const SearchIcon = styled.div``;
+export const SearchIcon = styled.div`
+   width: 27px;
+   height: 27px;
+   fill: var(--gray);
+`;
 
 export const Body = styled.div``;
