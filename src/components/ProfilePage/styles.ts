@@ -2,7 +2,18 @@ import styled, { css } from 'styled-components';
 
 import { LocationOn, Cake } from '../../styles/Icons';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+   display: flex;
+   flex-direction: column;
+
+   max-height: 100%;
+   overflow-y: auto;
+
+   scrollbar-width: none; /** Firefox */
+   ::-webkit-scrollbar {
+      display: none;
+   }
+`;
 
 export const Banner = styled.div``;
 
@@ -17,8 +28,12 @@ const iconCSS = css`
    color: var(--gray);
 `;
 
-export const LocationIcon = styled(LocationOn)``;
+export const LocationIcon = styled(LocationOn)`
+   ${iconCSS}
+`;
 
-export const CakeIcon = styled(Cake)``;
+export const CakeIcon = styled(Cake)`
+   ${iconCSS}
+`;
 
 export const Followage = styled.div``;
