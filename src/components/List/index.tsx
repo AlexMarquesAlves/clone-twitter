@@ -1,16 +1,20 @@
-import { ReactNode } from 'react';
-
-import { Container } from './styles';
+import { Container, Item, Title } from './styles';
 
 interface ListProps {
-   children?: ReactNode;
+   title: string;
+   elements: React.ReactNode[];
 }
 
-function List({ children }: ListProps) {
+function List({ title, elements }: ListProps) {
    return (
       <Container>
-         <h1>List</h1>
-         {children}
+         <Item>
+            <Title>{title}</Title>
+         </Item>
+
+         {elements.map((element, index) => (
+            <Item key={index}>{element}</Item>
+         ))}
       </Container>
    );
 }
