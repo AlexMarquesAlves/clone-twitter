@@ -1,3 +1,7 @@
-import { creteGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-export default creteGlobalStyle``;
+export default createGlobalStyle`
+   *{
+      margin:
+   }
+`;
