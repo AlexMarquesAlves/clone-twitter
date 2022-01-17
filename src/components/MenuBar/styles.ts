@@ -127,10 +127,15 @@ export const ProfileIcon = styled(Person)`
    ${iconCSS}
 `;
 
-// export const Botside = styled.div``;
+export const Botside = styled.div`
+   margin-top: 20px;
 
-// export const Avatar = styled.div``;
+   display: flex;
+   align-items: center;
+`;
 
-// export const ProfileData = styled.div``;
+export const Avatar = styled.div``;
 
-// export const ExitIcon = styled.div``;
+export const ProfileData = styled.div``;
+
+export const ExitIcon = styled.div``;
