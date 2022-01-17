@@ -1,18 +1,25 @@
 import { ReactNode } from 'react';
 
-import { Container } from './styles';
+import { Container, Tab } from './styles';
 
 interface FeedProps {
-  children: ReactNode;
+   children?: ReactNode;
 }
 
 function Feed({ children }: FeedProps) {
-  return (
-    <Container>
-      <h1>Feed</h1>
-      {children}
-    </Container>
-  );
-};
+   return (
+      <Container>
+         <Tab>Tweets</Tab>
+
+         {/* <Tweets>
+            <Tweeet />
+            <Tweeet />
+            <Tweeet />
+            <Tweeet />
+            <Tweeet />
+         </Tweets> */}
+      </Container>
+   );
+}
 
 export default Feed;
