@@ -11,7 +11,13 @@ export const Container = styled.div`
    max-width: 100%;
 `;
 
-export const Retweeted = styled.div``;
+export const Retweeted = styled.div`
+   display: flex;
+   align-items: center;
+
+   font-size: 13px;
+   color: var(--gray);
+`;
 
 export const RocketseatIcon = styled.div``;
 
