@@ -47,7 +47,62 @@ export const Logo = styled(Rocketseat)`
    margin-bottom: 20px;
 `;
 
-export const MenuButton = styled.div``;
+export const MenuButton = styled.div`
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+
+   > span {
+      display: none;
+   }
+
+   @media (min-width: 1280px) {
+      > span {
+         display: inline;
+         margin-left: 19px;
+         font-weight: bold;
+         font-size: 19px;
+      }
+      padding-right: 15px;
+   }
+
+   padding: 8.25px 0;
+   outline: 0;
+
+   & + button {
+      margin-top: 16.5px;
+   }
+   & + button:last-child {
+      margin-top: 33px;
+      width: 40px;
+      height: 40px;
+      > span {
+         display: none;
+      }
+      @media (min-width: 1280px) {
+         width: 100%;
+         height: unset;
+         > span {
+            display: inline;
+         }
+      }
+   }
+
+   cursor: pointer;
+   border-radius: 25px;
+   &:hover {
+      background: var(--twitter-dark-hover);
+   }
+
+   &:hover,
+   &.active {
+      span,
+      svg {
+         color: var(--twitter);
+         fill: var(--twitter);
+      }
+   }
+`;
 
 const iconCSS = css`
    flex-shrink: 0;
