@@ -1,6 +1,8 @@
 import { ReactNode } from 'react';
 
-import { Container, Tab } from './styles';
+import Tweet from '../Tweet';
+
+import { Container, Tab, Tweets } from './styles';
 
 interface FeedProps {
    children?: ReactNode;
@@ -11,13 +13,13 @@ function Feed({ children }: FeedProps) {
       <Container>
          <Tab>Tweets</Tab>
 
-         {/* <Tweets>
-            <Tweeet />
-            <Tweeet />
-            <Tweeet />
-            <Tweeet />
-            <Tweeet />
-         </Tweets> */}
+         <Tweets>
+            <Tweet />
+            <Tweet />
+            <Tweet />
+            <Tweet />
+            <Tweet />
+         </Tweets>
       </Container>
    );
 }

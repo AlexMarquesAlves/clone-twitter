@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 
+import Feed from '../Feed';
+
 import {
    Container,
    Banner,
@@ -55,6 +57,8 @@ function ProfilePage({ children }: ProfilePageProps) {
                </span>
             </Followage>
          </ProfileData>
+
+         <Feed />
       </Container>
    );
 }
