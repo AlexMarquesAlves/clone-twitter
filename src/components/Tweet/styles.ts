@@ -83,7 +83,12 @@ export const Header = styled.div`
    }
 `;
 
-export const Dot = styled.div``;
+export const Dot = styled.div`
+   background: var(--gray);
+   width: 2px;
+   height: 2px;
+   margin: 0 10px;
+`;
 
 export const Description = styled.div``;
 
