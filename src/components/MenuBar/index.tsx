@@ -12,10 +12,10 @@ import {
    EmailIcon,
    FavoriteIcon,
    ProfileIcon,
-   Botside,
-   Avatar,
-   ProfileData,
-   ExitIcon,
+   // Botside,
+   // Avatar,
+   // ProfileData,
+   // ExitIcon,
 } from './styles';
 
 interface MenuBarProps {
