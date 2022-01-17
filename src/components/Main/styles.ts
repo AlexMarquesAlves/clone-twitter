@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { ArrowLeft } from '../../styles/Icons';
 export const Container = styled.div`
    display: flex;
    flex-direction: column;
@@ -29,14 +29,21 @@ export const Header = styled.div`
    > button {
       padding: 8px;
       border-radius: 50%;
+
       outline: 0;
       cursor: pointer;
+
       &:hover {
          background: var(--twitter-dark-hover);
       }
    }
 `;
 
-export const BackIcon = styled.div``;
+export const BackIcon = styled(ArrowLeft)`
+   width: 24px;
+   height: 24px;
+
+   fill: var(--twitter);
+`;
 
 export const ProfileInfo = styled.div``;
