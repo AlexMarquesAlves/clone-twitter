@@ -12,10 +12,10 @@ import {
    EmailIcon,
    FavoriteIcon,
    ProfileIcon,
-   // Botside,
-   // Avatar,
-   // ProfileData,
-   // ExitIcon,
+   Botside,
+   Avatar,
+   ProfileData,
+   ExitIcon,
 } from './styles';
 
 interface MenuBarProps {
@@ -57,6 +57,17 @@ function MenuBar({ children }: MenuBarProps) {
                <span>Tweetar</span>
             </Button>
          </Topside>
+
+         <Botside>
+            <Avatar />
+
+            <ProfileData>
+               <strong>Alex Marques Alves</strong>
+               <span>@meArchi_Duque</span>
+            </ProfileData>
+
+            <ExitIcon />
+         </Botside>
       </Container>
    );
 }
