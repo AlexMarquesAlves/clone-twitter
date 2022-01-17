@@ -1,9 +1,8 @@
-import { ReactNode } from 'react';
-
 import { Container, Avatar, Info, FollowButton } from './styles';
 
 interface FollowSuggestionProps {
-   children?: ReactNode;
+   name: string;
+   nickname: string;
 }
 
 function FollowSuggestion({ name, nickname }: FollowSuggestionProps) {

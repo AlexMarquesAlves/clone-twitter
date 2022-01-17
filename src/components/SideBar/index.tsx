@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 import List from '../List';
+import FollowSuggestion from '../FollowSuggestion';
+import News from '../News';
 
 import {
    Container,
@@ -22,12 +24,35 @@ function SideBar({ children }: SideBarProps) {
 
          <Body>
             <List
-               title="Talvez voce curta"
-               elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+               title="Talvez você curta"
+               elements={[
+                  <FollowSuggestion
+                     name="Luiz Batanero"
+                     nickname="@luizbatanero"
+                  />,
+                  <FollowSuggestion
+                     name="Luke Morales"
+                     nickname="@lukemorales"
+                  />,
+                  <FollowSuggestion
+                     name="Camila Magalhães"
+                     nickname="@camilaamgl"
+                  />,
+               ]}
             />
             <List
-               title="Talvez voce curta"
-               elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+               title="O que está acontecendo"
+               elements={[
+                  <News />,
+                  <News />,
+                  <News />,
+                  <News />,
+                  <News />,
+                  <News />,
+                  <News />,
+                  <News />,
+                  <News />,
+               ]}
             />
          </Body>
       </Container>
