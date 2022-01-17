@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import List from '../List';
 
 import {
    Container,
@@ -20,7 +21,14 @@ function SideBar({ children }: SideBarProps) {
          </SearchWrapper>
 
          <Body>
-            <p>{'lorem ipsum dolor sit amet.'.repeat(90)}</p>
+            <List
+               title="Talvez voce curta"
+               elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+            />
+            <List
+               title="Talvez voce curta"
+               elements={[<h1>Teste</h1>, <h1>Teste</h1>, <h1>Teste</h1>]}
+            />
          </Body>
       </Container>
    );
