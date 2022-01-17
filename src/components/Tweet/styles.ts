@@ -109,7 +109,25 @@ export const ImageContent = styled.div`
    }
 `;
 
-export const Icons = styled.div``;
+export const Icons = styled.div`
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 11px auto 0;
+   width: 100%; /** Mobile */
+
+   @media (min-width: 330px) {
+      width: 63%;
+   }
+
+   > div {
+      cursor: pointer;
+      &:hover {
+         opacity: 0.7;
+      }
+   }
+`;
 
 export const Status = styled.div``;
 
