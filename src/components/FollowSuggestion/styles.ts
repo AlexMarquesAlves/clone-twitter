@@ -11,3 +11,11 @@ export const Container = styled.div`
       align-items: center;
    }
 `;
+
+export const Avatar = styled.div`
+   width: 49px;
+   height: 49px;
+   background: var(--gray);
+   border-radius: 50%;
+   margin-right: 10px;
+`;
