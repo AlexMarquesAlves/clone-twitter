@@ -8,6 +8,7 @@ import {
    LocationIcon,
    CakeIcon,
    Followage,
+   EditButton,
 } from './styles';
 
 interface ProfilePageProps {
@@ -22,7 +23,7 @@ function ProfilePage({ children }: ProfilePageProps) {
          </Banner>
 
          <ProfileData>
-            {/* <EditButton outilined>Editar perfil</EditButton> */}
+            <EditButton outlined>Editar perfil</EditButton>
 
             <h1>Alex Marques ALves</h1>
             <h2>@meArchi_Duque</h2>
