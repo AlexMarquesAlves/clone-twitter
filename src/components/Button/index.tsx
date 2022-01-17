@@ -1,18 +1,28 @@
-import { ReactNode } from 'react';
+import styled from 'styled-components';
 
-import { Container } from './styles';
-
-interface ButtonProps {
-  children: ReactNode;
+interface Props {
+   outlined?: boolean;
 }
 
-function Button({ children }: ButtonProps) {
-  return (
-    <Container>
-      <h1>Button</h1>
-      {children}
-    </Container>
-  );
-};
+export default styled.button<Props>`
+   background: ${(props) =>
+      props.outlined ? 'transparent' : 'var(--twitter)'};
+   color: ${(props) => (props.outlined ? 'var(--twitter)' : 'var(--white)')};
+   border: ${(props) => (props.outlined ? '1px solid var(--twitter)' : 'none')};
 
-export default Button;
+   padding: 16px;
+   border-radius: 25px;
+
+   font-weight: bold;
+   font-size: 15px;
+
+   cursor: pointer;
+   outline: 0;
+
+   &:hover {
+      background: ${(props) =>
+         props.outlined
+            ? 'var(--twitter-dark-hover)'
+            : 'var(--twitter-light-hover)'};
+   }
+`;
