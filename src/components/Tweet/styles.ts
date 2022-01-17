@@ -59,7 +59,29 @@ export const Content = styled.div`
    padding-left: 59px;
 `;
 
-export const Header = styled.div``;
+export const Header = styled.div`
+   display: flex;
+   align-items: center;
+
+   font-size: 15px;
+   white-space: nowrap;
+
+   > strong {
+      margin-right: 5px;
+   }
+
+   > span,
+   time {
+      color: var(--gray);
+   }
+
+   > strong,
+   span {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+   }
+`;
 
 export const Dot = styled.div``;
 
