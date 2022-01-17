@@ -1,16 +1,10 @@
-import { ReactNode } from 'react';
-
 import { Container } from './styles';
 
-interface NewsProps {
-   children?: ReactNode;
-}
-
-function News({ children }: NewsProps) {
+function News() {
    return (
       <Container>
-         <h1>News</h1>
-         {children}
+         <span>Assuntos do momento no Brasil</span>
+         <strong>Bootcamp da Rocketseat</strong>
       </Container>
    );
 }
