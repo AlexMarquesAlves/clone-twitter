@@ -90,7 +90,10 @@ export const Dot = styled.div`
    margin: 0 10px;
 `;
 
-export const Description = styled.div``;
+export const Description = styled.div`
+   font-size: 14px;
+   margin-top: 4px;
+`;
 
 export const ImageContent = styled.div``;
 
