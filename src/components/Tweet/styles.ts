@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { Chat, Rocketseat, Favorite } from '../../styles/Icons';
+
 export const Container = styled.div`
    display: flex;
    flex-direction: column;
